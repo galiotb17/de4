@@ -1,5 +1,7 @@
 $(document).ready(function () {
-    $('.header-bar').on('click', function (e) {
+    $('.header-bar').on('click', function (e)
+     {
+        e.preventDefault();
         $('.header-navbar').addClass('active');
         $('body').addClass('stop-scrolling');
     }); 

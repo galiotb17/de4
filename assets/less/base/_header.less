@@ -84,7 +84,6 @@
         li:last-child {
             padding-right: 0;
             border-right: 0;// bỏ border cái cuối
-
         }
     }
 
@@ -109,14 +108,16 @@
     }
 }
 @media screen and (max-width: 1023.9px) {
-    .header {
+    .header-navbar{
         &.active {
             visibility: visible;
             opacity: 1;
             ul {
                  transform: translateX(0);
                }
-            }
+        }
+    }
+    .header {
         &-bar {
             display: block;
         }
@@ -350,6 +351,7 @@
     }
 }
 .product {
+    padding-bottom: 2px;
     margin-top: 96px - 15px; 
     transform: translateX(-2px);
     &-list {
@@ -406,7 +408,7 @@
         font-size: 14px;
     }
     &-content {
-        padding: 25px 30px 30px 30px;
+        padding: 24px 30px 30px 32px;
     }
     &-tool {
         display: none;

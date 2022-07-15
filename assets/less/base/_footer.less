@@ -251,17 +251,22 @@
         }
     }
 }
-.footer-end{
+.copyright {
+    margin-top: 39px;
     background-color: @color-black;
-    padding: 17px 0;
-    &-des{
-        max-width: 100%;
-        text-align: center;
-        color: @color-gray;
+    &-link {
+        display: flex;
+        justify-content: center; // căn giữa nội dung
+        align-items: center; // căn giữa nội dung
+ 
+        color: @color-text--gray;
+        min-height: 50px; // chiều cao của copyright
+        height: fit-content; // chiều cao của copyright
         font-family: 'Poppins';
         font-weight: 400;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 2.1428; // 30 / 14
+        text-align: center;
     }
 }
 
