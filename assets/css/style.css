@@ -650,6 +650,16 @@ a {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
 }
+@media only screen and (max-width: 1023.9px) {
+  .brand-col {
+    max-width: calc(4 * 100% / 12);
+    flex: 0 0 calc(4 * 100% / 12);
+    position: relative;
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}
 .site-footer {
   background-color: #222222;
   color: #777;

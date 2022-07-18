@@ -15,8 +15,6 @@
         }
     }
 }
-
-
 .client-say {
     text-align: center;
     &-title {
@@ -70,7 +68,6 @@
     }     
 }
 .brand {
-    
     margin-top: 147px;
     &-col {
         border-top: 1px solid @color-gray3;
@@ -89,6 +86,14 @@
         }
     }
 
+}
+@media only screen and (max-width:1023.9px){
+    .brand{
+        &-col{
+            // border-top: 1px solid @color-gray3;
+            .col(4);
+        }
+    }
 }
 .site-footer {
     background-color: @color-footer;
@@ -256,17 +261,17 @@
     background-color: @color-black;
     &-link {
         display: flex;
-        justify-content: center; // căn giữa nội dung
-        align-items: center; // căn giữa nội dung
- 
+        justify-content: center;
+        align-items: center; 
         color: @color-text--gray;
-        min-height: 50px; // chiều cao của copyright
-        height: fit-content; // chiều cao của copyright
+        min-height: 50px;
+        height: fit-content; 
         font-family: 'Poppins';
         font-weight: 400;
         font-size: 14px;
-        line-height: 2.1428; // 30 / 14
+        line-height: 2.1428; 
         text-align: center;
+
     }
 }
 
