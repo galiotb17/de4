@@ -1,12 +1,15 @@
 .client-say-slick {
     .slick-dots {
         bottom: -51px; // vị trí của dot
-        & > li {
+
+        &>li {
             margin: 0;
+
             button:before {
                 font-size: 12px; // độ lớn của dot
                 color: #ccc;
             }
+
             &.slick-active {
                 button:before {
                     color: @color-red;
@@ -15,8 +18,10 @@
         }
     }
 }
+
 .client-say {
     text-align: center;
+
     &-title {
         margin-top: 89px;
         font-size: 36px;
@@ -24,19 +29,22 @@
         font-family: 'Poppins';
         font-weight: 700;
     }
+
     &-avatar {
         margin: 50px auto 0 auto;
-          width: 80px;
-          height: 80px;
-        img{
+        width: 80px;
+        height: 80px;
+
+        img {
             width: 100%;
             height: 100%;
-            border-radius:50%;
+            border-radius: 50%;
             object-fit: cover;
         }
-          
-        
+
+
     }
+
     &-word {
         margin: 22px auto 0 auto;
         width: 758px + 30px; // 30px của box-sizing
@@ -50,6 +58,7 @@
         color: @color-gray;
         text-align: center;
     }
+
     &-name {
         margin-top: 27px;
         font-size: 18px;
@@ -58,6 +67,7 @@
         font-weight: 700;
         text-transform: uppercase;
     }
+
     &-status {
         margin-top: 4px;
         font-size: 14px;
@@ -65,17 +75,21 @@
         font-family: 'Poppins';
         font-weight: 400;
         color: @color-gray;
-    }     
+    }
 }
+
 .brand {
     margin-top: 147px;
+
     &-col {
         border-top: 1px solid @color-gray3;
         .col(2);
     }
+
     &-logo {
         padding-top: calc(151 / 170 * 100%); // tạo khung
         position: relative;
+
         img {
             width: auto;
             max-width: 90%;
@@ -87,35 +101,40 @@
     }
 
 }
-@media only screen and (max-width:1023.9px){
-    .brand{
-        &-col{
+
+@media only screen and (max-width:1023.9px) {
+    .brand {
+        &-col {
             // border-top: 1px solid @color-gray3;
             .col(4);
         }
     }
 }
+
 .site-footer {
     background-color: @color-footer;
     color: @color-gray;
-    &-heading { 
-        padding: 100px 15px 15px; 
-        box-sizing: border-box; 
-        width: calc(770px + 30px); 
-        max-width: 100%; 
-        margin: 0 auto; 
+
+    &-heading {
+        padding: 100px 15px 15px;
+        box-sizing: border-box;
+        width: calc(770px + 30px);
+        max-width: 100%;
+        margin: 0 auto;
         text-align: center;
         font-family: 'Poppins';
         font-weight: 400;
         font-size: 14px;
         line-height: 1.74;
         padding-bottom: 18px;
-    } 
-    &_navbar{
+    }
+
+    &_navbar {
         .row {
             padding-top: 70px;
             position: relative;
             margin-bottom: 38px;
+
             &:after {
                 content: '';
                 position: absolute;
@@ -126,17 +145,20 @@
                 height: 1px;
                 background-color: @color-gray4;
             }
-        }    
+        }
+
         .col {
             .col(3);
         }
+
         a,
         i {
             color: @color-gray; // Màu chữ chủ đạo
             font-size: 14px;
             line-height: 2.8571; // 40 / 14
-        }    
+        }
     }
+
     &-nav_heading {
         margin-bottom: 18px;
         text-transform: uppercase;
@@ -145,106 +167,127 @@
         line-height: 1.6666; // 30/18
         color: @color-text--white;
         font-weight: 700;
-    }       
+    }
 }
-.footer-contact-us_list{
-    span{
+
+.footer-contact-us_list {
+    span {
         font-family: 'Poppins';
         font-size: 14px;
         font-weight: 400;
     }
 }
-.footer-my-account_list{
-    a{
+
+.footer-my-account_list {
+    a {
         font-family: 'Poppins';
         font-size: 14px;
         font-weight: 400;
     }
 }
-.footer-information_list{
-    a{
+
+.footer-information_list {
+    a {
         font-family: 'Poppins';
         font-size: 14px;
         font-weight: 400;
     }
 }
-.footer-quick-link_list{
-    a{
+
+.footer-quick-link_list {
+    a {
         font-family: 'Poppins';
         font-size: 14px;
         font-weight: 400;
     }
 }
-.footer{
+
+.footer {
     &-contact-us_list {
         a {
             display: flex;
             align-items: center;
+
             i {
-                width: 29px; 
+                width: 29px;
                 .flex(0 0 29px);
             }
         }
     }
-    &-logo{
+
+    &-logo {
         padding-bottom: 23px;
     }
-    &-logo-img{
+
+    &-logo-img {
         width: 199px; // độ rộng logo
         display: block; // có thể thay chiều cao
         margin: 0 auto; // căn giữa
+
         img {
             width: 100%;
         }
     }
+
     &-sosial {
         margin-top: 21px;
-        .translateX(3px); 
+        .translateX(3px);
+
         i {
             color: @color-gray;
             font-size: 18px;
         }
+
         ul {
             margin-bottom: 15px;
             display: flex; // dàn ngang
             justify-content: center; // căn giữa
+
             a {
-                width: 63px; 
+                width: 63px;
                 padding: 20px 0; // tạo chiều cao
                 display: block; // Có thể padding chiều dọc
             }
         }
     }
 }
+
 @media only screen and (max-width: 1023.9px) {
     .site-footer {
         &-nav_heading {
-            margin-top: 40px; 
+            margin-top: 40px;
         }
+
         &_navbar {
-            margin-top: 40px; 
+            margin-top: 40px;
+
             .col {
                 .col(6);
             }
         }
     }
 }
+
 @media only screen and (max-width: 767.9px) {
     .site-footer {
         &-nav_heading {
             cursor: pointer; // con trỏ chuột
         }
+
         &_navbar {
             ul {
                 max-height: 0;
                 overflow: hidden;
                 transition: max-height 0.5s; // tạo hiệu ứng
+
                 &.active {
                     max-height: 1000px; // mở ra
                 }
             }
+
             .col {
                 .col(12);
+
                 p,
                 a {
                     text-align: center;
@@ -256,22 +299,23 @@
         }
     }
 }
+
 .copyright {
     margin-top: 39px;
     background-color: @color-black;
+
     &-link {
         display: flex;
         justify-content: center;
-        align-items: center; 
+        align-items: center;
         color: @color-text--gray;
         min-height: 50px;
-        height: fit-content; 
+        height: fit-content;
         font-family: 'Poppins';
         font-weight: 400;
         font-size: 14px;
-        line-height: 2.1428; 
+        line-height: 2.1428;
         text-align: center;
 
     }
 }
-
